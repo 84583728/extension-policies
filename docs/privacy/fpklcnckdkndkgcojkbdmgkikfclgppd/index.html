@@ -4,140 +4,117 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="extension-policy-id" content="fpklcnckdkndkgcojkbdmgkikfclgppd">
+  <meta name="extension-version" content="1.1.13">
   <title>Privacy Policy — Modern 2FA verifier</title>
   <style>
-    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #171717; background: #fff; }
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #171717; background: #f7f7f7; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-size: 16px; line-height: 1.7; }
-    main { max-width: 800px; margin: auto; padding: 64px 20px 48px; }
-    header { border-bottom: 1px solid #ddd; padding-bottom: 32px; margin-bottom: 32px; }
-    .eyebrow { margin: 0 0 14px; font-size: 12px; font-weight: 650; letter-spacing: .14em; text-transform: uppercase; color: #595959; }
-    h1 { font-size: clamp(36px, 7vw, 54px); line-height: 1.12; letter-spacing: -.035em; margin: 0 0 18px; font-weight: 650; }
-    .product { font-size: 20px; margin: 0 0 10px; }
-    .meta, footer { color: #595959; font-size: 14px; }
-    .meta { margin: 4px 0; overflow-wrap: anywhere; }
-    .notice { padding: 20px 24px; border: 1px solid #ddd; background: #f7f7f7; margin: 24px 0; }
-    .notice p { margin: 8px 0 0; }
-    nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 24px; font-size: 14px; }
+    body { margin: 0; padding: 40px 24px; font-size: 16px; line-height: 1.7; }
+    main { width: 100%; max-width: 840px; margin: 0 auto; padding: 40px; background: #fff; border: 1px solid #ededed; border-radius: 12px; box-shadow: 0 2px 5px rgb(0 0 0 / 3%); }
+    header { margin-bottom: 32px; text-align: center; }
+    h1 { margin: 0; font-size: 32px; line-height: 1.4; font-weight: 700; letter-spacing: -.025em; }
+    h1::after { content: ""; display: block; width: 48px; height: 3px; margin: 16px auto; border-radius: 2px; background: #333; }
+    .updated { margin: 0; color: #595959; font-size: 14px; }
+    p { margin: 16px 0; color: #444; }
+    strong { color: #171717; }
+    section { margin-top: 36px; }
+    h2 { position: relative; margin: 0 0 20px; padding-bottom: 12px; border-bottom: 1px solid #ddd; font-size: 24px; line-height: 1.4; font-weight: 650; letter-spacing: -.015em; }
+    h2::after { content: ""; position: absolute; bottom: -1px; left: 0; width: 32px; height: 1px; background: #595959; }
+    h3 { margin: 24px 0 10px; font-size: 18px; line-height: 1.5; font-weight: 650; }
+    ul { margin: 16px 0; padding-left: 24px; color: #444; }
+    li { margin: 10px 0; padding-left: 2px; }
     a { color: #333; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
     a:hover { color: #000; }
-    a:focus-visible { outline: 2px solid #171717; outline-offset: 4px; }
-    section { margin-top: 38px; }
-    h2 { font-size: 23px; line-height: 1.35; letter-spacing: -.015em; margin: 0 0 16px; font-weight: 650; }
-    h3 { font-size: 17px; margin: 22px 0 8px; }
-    p { margin: 0 0 14px; }
-    ul { padding-left: 23px; margin: 14px 0; }
-    li { margin: 9px 0; }
-    code { font-size: .9em; overflow-wrap: anywhere; }
-    footer { border-top: 1px solid #ddd; margin-top: 48px; padding-top: 20px; }
-    @media (max-width: 480px) { main { padding-top: 36px; } .notice { padding: 16px; } section { margin-top: 30px; } }
-    @media print { main { max-width: none; padding: 0; } nav { display: none; } section { break-inside: avoid; } }
+    a:focus-visible { outline: 2px solid #333; outline-offset: 3px; }
+    .contact { margin-top: 40px; padding: 24px; border: 1px solid #e5e5e5; border-left: 3px solid #333; border-radius: 3px 10px 10px 3px; background: #f7f7f7; }
+    .contact h2 { padding: 0; border: 0; margin-bottom: 18px; }
+    .contact h2::after { display: none; }
+    .contact p:last-child { margin-bottom: 0; }
+    @media (max-width: 600px) { body { padding: 16px 12px; } main { padding: 28px 20px; border-radius: 10px; } h1 { font-size: 30px; } h2 { font-size: 22px; } .contact { padding: 20px; } }
+    @media print { :root { background: #fff; } body { padding: 0; } main { max-width: none; padding: 0; border: 0; box-shadow: none; } h2, h3 { break-after: avoid; } .contact { break-inside: avoid; } }
   </style>
 </head>
 <body>
 <main>
   <header>
-    <p class="eyebrow">Your information</p>
     <h1>Privacy Policy</h1>
-    <p class="product">Modern 2FA verifier</p>
-    <p class="meta">Also displayed in the extension as Authenticator</p>
-    <p class="meta">Last updated October 26, 2026 · Extension version 1.1.13</p>
-    <p class="meta">Extension ID: fpklcnckdkndkgcojkbdmgkikfclgppd</p>
-    <nav aria-label="Policy sections">
-      <a href="#data">Data we process</a>
-      <a href="#cloud">Cloud sync</a>
-      <a href="#retention">Retention and deletion</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p class="updated">Last updated: October 26, 2026</p>
   </header>
 
-  <p>This policy describes how this browser extension handles information when you save authentication accounts, generate one-time codes, scan a page for setup QR codes, fill a code into a website, or use account and cloud features.</p>
-  <p>The extension's developer name is Modern 2FA verifier. Its ShipLang cloud sync, sign-in, membership and payment services are operated by weidali ltd.</p>
+  <p><strong>Modern 2FA verifier</strong>, also shown as Authenticator, helps you manage authentication accounts and generate one-time codes. This policy covers the information handled by the extension and its connected services.</p>
+  <p>The extension's developer name is Modern 2FA verifier. <strong>weidali ltd</strong> operates its ShipLang cloud sync, sign-in, membership and payment services.</p>
 
-  <aside class="notice">
-    <strong>Authentication secrets can be synchronized.</strong>
-    <p>Authentication accounts are stored in browser sync storage. Separately, enabling ShipLang cloud sync sends authentication secrets and account details to ShipLang. Generating a code takes place in your browser; this does not mean that all account data stays only on your device.</p>
-  </aside>
-
-  <section id="data">
-    <h2>1. Data we process</h2>
+  <section aria-labelledby="information">
+    <h2 id="information">Information We Handle</h2>
     <h3>Authentication accounts</h3>
-    <p>The extension processes the secret keys you enter, import, or obtain from setup QR codes, along with account names or labels, service names, authentication type, algorithm, number of digits, time period, and counter where applicable. Imported records may also contain icon information, setup URLs, and groups. This information is used to manage accounts and generate authentication codes.</p>
-    <p>Accounts and preferences, including site filtering and automatic filling, are saved in Chrome's extension sync storage. Chrome may synchronize this information to other signed-in browser installations according to your browser settings. This browser service is separate from ShipLang cloud sync.</p>
-    <h3>Settings and local service state</h3>
-    <p>The extension stores service sign-in and membership information, the cloud-sync password you choose to save, temporary sign-in state, and an icon cache in local extension storage. Membership information is used to display membership status and account-limit reminders.</p>
+    <p>We process the secret keys you enter, import or scan, along with account labels, service names and the settings needed to generate codes: authentication type, algorithm, digits, period and counter. Imported accounts may include icons, setup URLs and groups.</p>
+    <h3>Account and service information</h3>
+    <p>Sign-in and membership features use your email, service account information and membership expiration. The extension also handles your preferences, saved cloud-sync password, temporary sign-in state and icon cache. Support messages are used to respond to your inquiry.</p>
+    <h3>Website information</h3>
+    <p>The active tab's address is read to match accounts to the current site. When you request a QR scan, page images and canvases are decoded in your browser. Code filling inspects suitable input fields on that page.</p>
   </section>
 
-  <section id="pages">
-    <h2>2. Website access and authentication codes</h2>
-    <p>When you open the extension, it reads the active tab's address to show accounts associated with that site. When you request a page scan, it reads image and canvas pixels on the page and decodes authentication setup QR codes in your browser.</p>
-    <p>Clicking a code copies it to your clipboard. With automatic filling enabled, the extension also places that code into an appropriate input on the active page and triggers the page's input events. That website can then receive the code. Automatic filling is enabled by default and can be disabled in settings.</p>
-    <p>The extension's diagnostic console messages can include generated codes and information about page input fields during filling. These messages are local browser diagnostics.</p>
-  </section>
-
-  <section id="cloud">
-    <h2>3. ShipLang cloud sync</h2>
-    <p>Cloud sync connects to <a href="https://shiplang.com">shiplang.com</a>. After you sign in and save a cloud-sync password, synchronization sends your service account email, application identifier, sync password, language, and authentication account information to this service. Account information includes the actual authentication secret, service name, account label, authentication type, and algorithm.</p>
-    <p>A synchronization can upload existing accounts that are missing from the cloud and download accounts stored there. Once sign-in information and a sync password are saved, adding or editing accounts can also send changes to the service. Deleting an account can send a cloud deletion request.</p>
-    <p>These requests use HTTPS. The extension sends secrets and the sync password as request URL parameters; it does not encrypt them with a separate client-side encryption layer before sending them. The sync password is also stored in local extension storage. This policy does not describe this feature as end-to-end encryption.</p>
-  </section>
-
-  <section id="services">
-    <h2>4. Sign-in, membership and payment</h2>
-    <p>Sign-in and membership payment open hosted pages at <a href="https://crx.shiplang.com">crx.shiplang.com</a>. The extension passes its application and extension identifiers, version, interface language, and, when available, your account email and membership expiration time. Account and membership information returned by the service is saved locally.</p>
-    <p>Google provides sign-in authentication. The hosted service uses the sign-in result and your account email to provide your service account. The extension checks account counts and membership expiration locally to show upgrade reminders.</p>
-    <p>Payments use PayPro or Stripe through the hosted checkout. The payment provider handles the billing, transaction and payment information needed for checkout under its own privacy policy. weidali ltd maintains account, payment and membership records to administer the service.</p>
-  </section>
-
-  <section id="permissions">
-    <h2>5. Permissions</h2>
+  <section aria-labelledby="use">
+    <h2 id="use">How Information Is Used</h2>
     <ul>
-      <li><strong>Storage:</strong> Saves authentication accounts, preferences, sign-in state, and the other local and synchronized information described above.</li>
-      <li><strong>Tabs:</strong> Reads the active tab address for site matching and communicates with that page for scanning and filling.</li>
-      <li><strong>Access to all websites:</strong> Allows the page script to support QR scanning and code filling on websites you use, and allows requests to the cloud service. You can manage permitted sites through Chrome's extension settings.</li>
+      <li>Generate authentication codes in your browser and manage your saved accounts.</li>
+      <li>Scan setup QR codes, match accounts to websites, and copy or fill codes when you click them. Automatic filling is enabled by default and can be turned off; the receiving website can access a filled code.</li>
+      <li>Synchronize accounts when you use sync features, manage sign-in and membership, process payments, and handle support or deletion requests.</li>
     </ul>
   </section>
 
-  <section id="sharing">
-    <h2>6. Recipients and third-party services</h2>
+  <section aria-labelledby="storage">
+    <h2 id="storage">Storage and Cloud Sync</h2>
+    <p><strong>Browser storage:</strong> Authentication accounts, including secret keys, and preferences are saved in Chrome's sync storage. Chrome may synchronize them across your signed-in browsers according to your settings. Service sign-in information, membership details, the saved cloud-sync password and icon cache use local extension storage.</p>
+    <p><strong>ShipLang cloud sync:</strong> This is separate from Chrome sync. After you sign in and save a sync password, the extension sends your email, application identifier, sync password, interface language and authentication accounts to <a href="https://shiplang.com">shiplang.com</a>. Uploaded accounts include the actual secret keys, labels, service names, authentication type and algorithm.</p>
+    <p>A sync can upload existing browser accounts and download cloud accounts. Once sign-in information and a sync password are saved, adding or editing accounts can also upload changes.</p>
+  </section>
+
+  <section aria-labelledby="services">
+    <h2 id="services">Connected Services</h2>
+    <p>Sign-in and payment open <a href="https://crx.shiplang.com">crx.shiplang.com</a>, passing the application and extension identifiers, version, interface language and, when available, your email and membership expiration. Returned account and membership information is saved locally.</p>
     <ul>
-      <li><strong>Google / Chrome:</strong> Provides Google sign-in and, separately, browser synchronization when enabled. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
-      <li><strong>weidali ltd / ShipLang:</strong> Operates the hosted services and receives the sign-in, membership, payment and cloud data described in this policy.</li>
-      <li><strong>PayPro and Stripe:</strong> Process checkout and payment information. See the <a href="https://docs.payproglobal.com/documents/legal/privacyPolicy.pdf">PayPro Privacy Policy</a> and <a href="https://stripe.com/privacy">Stripe Privacy Policy</a>.</li>
-      <li><strong>Websites you fill codes into:</strong> Receive the codes entered into their pages.</li>
-      <li><strong>Support email:</strong> Messages you send to the contact address are processed to respond to your inquiry or deletion request, using the email services involved in delivery.</li>
-      <li><strong>GitHub:</strong> Hosts this policy page and processes website requests under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The page itself contains no analytics scripts, forms, or external fonts.</li>
+      <li><strong>weidali ltd / ShipLang</strong> receives the cloud, account, membership and payment records needed to operate these services.</li>
+      <li><strong>Google</strong> provides sign-in and, separately, Chrome synchronization when enabled. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
+      <li><strong>PayPro and Stripe</strong> process billing, transaction and payment information during checkout. See the <a href="https://docs.payproglobal.com/documents/legal/privacyPolicy.pdf">PayPro policy</a> and <a href="https://stripe.com/privacy">Stripe policy</a>.</li>
+      <li><strong>Email services</strong> deliver your support and deletion messages. <strong>GitHub</strong> hosts this policy page under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. This page contains no analytics scripts, forms or external fonts.</li>
     </ul>
   </section>
 
-  <section id="retention">
-    <h2>7. Retention and deletion</h2>
-    <p>Saved browser authentication accounts remain available until removed or cleared. Browser synchronization and its removal behavior also depend on your Chrome settings.</p>
-    <p>Deleting one account removes its browser sync record. If service sign-in information and a cloud password are available, the extension also sends a request to mark that cloud account as deleted. A successful local deletion does not confirm that the cloud record has been permanently erased.</p>
-    <p><strong>Clear All Data</strong> clears the extension's browser sync storage, icon cache, and saved cloud-sync password. It does not send a request to delete all ShipLang cloud records, and it does not remove the locally stored service sign-in information. It also does not delete backup files you previously exported.</p>
-    <p><strong>ShipLang service records:</strong> weidali ltd retains cloud authentication data, account records, payment records and service logs long term, until you request deletion. To request deletion, email <a href="mailto:e@ShipLang.com">e@ShipLang.com</a>. Requests are processed within seven days of receipt. weidali ltd does not maintain backups of this service data.</p>
-    <p>This retention and deletion process applies to data held by weidali ltd. Google, PayPro, Stripe and GitHub manage data in their own services under their respective privacy policies. Deleting data from ShipLang does not itself delete records held independently by these providers.</p>
+  <section aria-labelledby="permissions">
+    <h2 id="permissions">Browser Permissions</h2>
+    <ul>
+      <li><strong>Storage:</strong> Saves accounts, preferences and service state.</li>
+      <li><strong>Tabs:</strong> Reads the active tab's address and communicates with the page.</li>
+      <li><strong>Website access:</strong> Supports page QR scanning, code filling and cloud requests. You can manage permitted sites in Chrome's extension settings.</li>
+    </ul>
   </section>
 
-  <section id="choices">
-    <h2>8. Your choices</h2>
-    <p>You can edit or delete saved accounts, turn off automatic filling and site filtering, manage Chrome synchronization and site access, or choose not to enable ShipLang cloud sync.</p>
-    <p>You can import supported account files and export accounts to a text backup. Exported files contain authentication secrets in readable authentication URLs and are not encrypted by the extension. Store or delete these files using your device's file controls, and share them only with recipients you intend to receive those secrets.</p>
+  <section aria-labelledby="retention">
+    <h2 id="retention">Keeping and Deleting Data</h2>
+    <p>weidali ltd retains cloud authentication data, account records, payment records and service logs long term until you request deletion. Email <a href="mailto:e@ShipLang.com">e@ShipLang.com</a> to make a request. Requests are processed within <strong>seven days</strong> of receipt. weidali ltd does not maintain backups of this service data.</p>
+    <p>Deleting an account removes its browser sync record. When sign-in information and a sync password are available, it also requests that the cloud record be marked as deleted. Local deletion alone does not confirm permanent cloud deletion.</p>
+    <p><strong>Clear All Data</strong> clears browser sync storage, the icon cache and the saved sync password. It does not clear ShipLang cloud records, locally saved service sign-in information or previously exported files.</p>
+    <p>Google, PayPro, Stripe and GitHub follow their own retention and deletion policies. A request to weidali ltd does not itself erase records held independently by these providers.</p>
   </section>
 
-  <section id="changes">
-    <h2>9. Changes to this policy</h2>
-    <p>This page will be updated when the extension's data practices change. The date at the top identifies the policy revision.</p>
+  <section aria-labelledby="security">
+    <h2 id="security">Security and Your Choices</h2>
+    <p>Cloud requests use HTTPS, but secret keys and the sync password are sent in request URL parameters without an additional client-side encryption layer. The saved sync password is also held in local extension storage.</p>
+    <p>Exported text backups contain readable authentication secrets. Protect or delete them using your device's file controls. Local diagnostic console messages during code filling may include codes and input-field information.</p>
+    <p>You can edit or delete accounts, export your data, turn off automatic filling and site filtering, manage Chrome synchronization and site access, or choose not to enable ShipLang cloud sync.</p>
   </section>
 
-  <section id="contact">
-    <h2>10. Contact</h2>
-    <p>Developer: Modern 2FA verifier, also displayed in the extension as Authenticator.</p>
-    <p>ShipLang service operator: weidali ltd.</p>
-    <p>For privacy questions or a data deletion request, contact <a href="mailto:e@ShipLang.com">e@ShipLang.com</a>. Deletion requests are processed within seven days of receipt.</p>
+  <section aria-labelledby="updates">
+    <h2 id="updates">Policy Updates</h2>
+    <p>We will revise this page when our data practices change and update the date above.</p>
   </section>
 
-  <footer>Modern 2FA verifier · Authenticator · Privacy Policy</footer>
+  <section class="contact" aria-labelledby="contact">
+    <h2 id="contact">Get in Touch</h2>
+    <p>For privacy questions or deletion requests, email <a href="mailto:e@ShipLang.com">e@ShipLang.com</a>. Deletion requests are processed within seven days of receipt.</p>
+    <p><strong>Developer:</strong> Modern 2FA verifier<br><strong>ShipLang service operator:</strong> weidali ltd</p>
+  </section>
 </main>
 </body>
 </html>
